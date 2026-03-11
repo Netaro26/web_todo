@@ -3,6 +3,8 @@ import functions
 
 todos = functions.get_todos()
 
+st.set_page_config(page_title="My-Todo App", page_icon="✅", layout="centered") # Set the page configuration for the Streamlit app
+
 def get_todos():
     todo = st.session_state["new_todo"] + "\n"
     todos.append(todo)
